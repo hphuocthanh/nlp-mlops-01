@@ -5,6 +5,7 @@ from scipy.special import softmax
 import onnxruntime as ort
 import numpy as np
 
+
 class ColaONNXPredictor:
     def __init__(self, model_path):
         self.processor = DataModule()
@@ -25,7 +26,7 @@ class ColaONNXPredictor:
 
         predictions = []
         for score, label in zip(scores, self.labels):
-            predictions.append({"label": label, "score": score})
+            predictions.append({"label": label, "score": score.astype("str")})
         return predictions
 
 
