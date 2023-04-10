@@ -1,0 +1,113 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.14.0
+    framework: huggingface
+    huggingface_version: 4.27.4
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: confusion matrix_table._type
+      5: 1
+      6:
+      - 1
+    - 1: confusion matrix_table.sha256
+      5: 1
+      6:
+      - 1
+    - 1: confusion matrix_table.size
+      5: 1
+      6:
+      - 1
+    - 1: confusion matrix_table.artifact_path
+      5: 1
+      6:
+      - 1
+    - 1: confusion matrix_table._latest_artifact_path
+      5: 1
+      6:
+      - 1
+    - 1: confusion matrix_table.path
+      5: 1
+      6:
+      - 1
+    - 1: confusion matrix_table.ncols
+      5: 1
+      6:
+      - 1
+    - 1: confusion matrix_table.nrows
+      5: 1
+      6:
+      - 1
+    python_version: 3.10.10
+    start_time: 1681014334.725143
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 49
+      - 51
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 49
+      - 51
+      - 53
+      - 55
+      3:
+      - 7
+      - 23
+      4: 3.10.10
+      5: 0.14.0
+      6: 4.27.4
+      8:
+      - 2
+      - 5
+    visualize:
+      confusion matrix:
+        panel_config:
+          fieldSettings:
+            Actual: Actual
+            Predicted: Predicted
+            nPredictions: nPredictions
+          panelDefId: wandb/confusion_matrix/v1
+          stringSettings:
+            title: ''
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: confusion matrix_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+lr:
+  desc: null
+  value: 0.01
+model_name:
+  desc: null
+  value: google/bert_uncased_L-2_H-128_A-2
