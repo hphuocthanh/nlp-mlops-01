@@ -10,18 +10,26 @@ from visualization import VisualisationLogger
 
 import hydra
 from omegaconf import OmegaConf
+import wandb
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 @hydra.main(config_path="./configs", config_name="config")
 def main(cfg):
-    print(OmegaConf.to_yaml(cfg, resolve=True))
+    logger.info(OmegaConf.to_yaml(cfg, resolve=True))
+    logger.info(f"Using the model: {cfg.model.name}")
+    logger.info(f"Using the tokenizer: {cfg.model.tokenizer}")
+
     cola_data = DataModule(
         cfg.model.tokenizer, cfg.processing.batch_size, cfg.processing.max_length
     )
     cola_model = ColaModel(cfg.model.name)
 
+    root_dir = hydra.utils.get_original_cwd()
     checkpoint_callback = ModelCheckpoint(
-        dirpath="./models",
+        dirpath=f"{root_dir}/models",
         filename="best-checkpoint",
         monitor="valid/loss",
         mode="min",
@@ -49,6 +57,7 @@ def main(cfg):
         limit_val_batches=cfg.training.limit_val_batches,
     )
     trainer.fit(cola_model, cola_data)
+    wandb.finish()
 
 
 if __name__ == "__main__":

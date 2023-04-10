@@ -1,0 +1,127 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.10.10",
+    "heartbeatAt": "2023-04-10T16:08:49.738442",
+    "startedAt": "2023-04-10T16:08:47.834635",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "training.max_epochs=3"
+    ],
+    "state": "running",
+    "program": "/home/hphuocthanh/code/nlp-mlops-01/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/hphuocthanh/nlp-mlops-01.git",
+        "commit": "3e46b177987d221b98a4a5f1abcf182e3838a515"
+    },
+    "email": "phuocthanhqt113@gmail.com",
+    "root": "/home/hphuocthanh/code/nlp-mlops-01",
+    "host": "hphuocthanh",
+    "username": "hphuocthanh",
+    "executable": "/home/hphuocthanh/mambaforge/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2894.4700000000007,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2894.47,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.92389297485352,
+        "used": 66.57526016235352
+    },
+    "gpu": "NVIDIA GeForce GTX 1650 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1650 Ti",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 7.693630218505859
+    }
+}
