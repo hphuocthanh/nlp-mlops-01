@@ -1,5 +1,10 @@
 # nlp-mlops-01
-A project based on the blogging series: https://www.ravirajag.dev/blog
+An MLOPs project based on the blogging series: https://www.ravirajag.dev/blog
+
+Project goals:
+- Implement an end-to-end lifecycle of MLOPs
+
+High-quality modeling is not the project's current focus
 
 Things I've done:
 - Create data module and model using PyTorch Lightning (2.0.0)
